@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+
+    <!-- Lottiefiles CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.13/lottie.min.js"></script>
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts (Barlow) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="barlow">
+    <!-- nav -->
+    <nav
+      class="text-white flex justify-between px-9 text-lg bg-black/80 sticky top-0 h-[10vh] z-10"
+    >
+      <img src="assets/logo.png" alt="KRDX" class="h-16 py-2" />
+      <ul class="flex items-center gap-9">
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="#service">Services</a>
+        </li>
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="#team">Our Team</a>
+        </li>
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="#hero">Home</a>
+        </li>
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="#about-us">About Us</a>
+        </li>
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="">Careers</a>
+        </li>
+        <li class="cursor-pointer hover-underline tracking-wide font-semibold">
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hero -->
+    <section class="background-section" id="hero">
+      <div class="background"></div>
+      <div class="hero h-[90vh] flex items-center justify-center">
+        <div class="w-[800px] text-white flex flex-col gap-9">
+          <div class="flex flex-col gap-3">
+            <h1 class="text-6xl font-bold">Bring your ideas to Life</h1>
+            <h1 class="text-6xl font-bold">With KR-DXCS</h1>
+          </div>
+          <p class="text-3xl font-semibold tracking-wide leading-10">
+            From concept to execution, we transform your vision into tangible,
+            scalable software solutions
+          </p>
+          <button
+            class="text-xl w-fit border border-2 border-white px-9 py-2 rounded-md hover:bg-white hover:text-black duration-200 text-2xl"
+          >
+            Explore More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+    <div class="bg-white py-9 px-9 h-[85vh]" id="about-us">
+      <h1 class="text-4xl text-center">About Us</h1>
+      <div class="flex mt-9 gap-9">
+        <div class="flex flex-col gap-9 w-1/2 pl-9">
+          <h1 class="text-5xl mt-9">
+            The Best Web and Mobile Application development Company
+          </h1>
+          <p class="text-xl leading-relaxed">
+            Welcome to KR-DXCS. We are a team of passionate and experienced web
+            and mobile developers dedicated to helping our clients turn their
+            ideas into reality. With our expertise in cutting-edge technologies,
+            we create customized solutions that meet our clients' unique needs
+            and exceed their expectations.
+          </p>
+          <button
+            class="border border-2 border-black w-fit px-3 py-2 rounded-md hover:bg-black hover:text-white duration-200"
+          >
+            View Portfolio
+          </button>
+        </div>
+        <div class="w-1/2 flex justify-center">
+          <div id="lottie-animation"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Section -->
+    <div class="gradient-background h-[85vh] pt-10 flex flex-col" id="service">
+      <h1 class="text-3xl tracking-wide">Our Services</h1>
+      <div class="flex flex-col gap-3 mt-3">
+        <h1 class="text-4xl font-bold">Custom IT Solutions for your</h1>
+        <h1 class="text-4xl font-bold">Successful Business</h1>
+      </div>
+      <div class="flex flex-col gap-9 items-center justify-center mt-9">
+        <div class="mt-9 grid grid-cols-3 gap-9">
+          <div
+            class="w-[400px] gap-4 flex items-center border border-2 border-white rounded-lg px-9 py-5 cursor-pointer"
+          >
+            <img src="assets/web.png" alt="" class="h-20" />
+            <h1 class="text-2xl">Web Development</h1>
+          </div>
+          <div
+            class="w-[400px] gap-4 flex items-center border border-2 border-white rounded-lg px-9 py-5 cursor-pointer"
+          >
+            <img src="assets/web.png" alt="" class="h-20" />
+            <h1 class="text-2xl">Mobile App Development</h1>
+          </div>
+          <div
+            class="w-[400px] gap-4 flex items-center border border-2 border-white rounded-lg px-9 py-5 cursor-pointer"
+          >
+            <img src="assets/web.png" alt="" class="h-20" />
+            <h1 class="text-2xl">Software Development</h1>
+          </div>
+        </div>
+        <div class="flex gap-9">
+          <div
+            class="w-[400px] gap-4 flex items-center border border-2 border-white rounded-lg px-9 py-5 cursor-pointer"
+          >
+            <img src="assets/web.png" alt="" class="h-20" />
+            <h1 class="text-2xl">Digital Transformation</h1>
+          </div>
+          <div
+            class="w-[400px] gap-4 flex items-center border border-2 border-white rounded-lg px-9 py-5 cursor-pointer"
+          >
+            <img src="assets/web.png" alt="" class="h-20" />
+            <h1 class="text-2xl">E-Learning Solutions</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology -->
+    <div class="h-[60vh] bg-white px-9 pt-9" id="technology">
+      <h1 class="text-3xl">Our Technology Stack</h1>
+      <nav class="sub-navbar">
+        <ul class="flex gap-9 justify-center text-2xl mt-8">
+          <li>
+            <a href="#" onclick="showContent('backend',event)" class="light"
+              >Backend</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showContent('frontend',event)" class="light"
+              >Frontend</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showContent('mobile', event)" class="light"
+              >Mobile</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showContent('database', event)" class="light"
+              >Database</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showContent('tools',event)" class="light"
+              >Tools</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content-area">
+        <div id="backend" class="content gap-10">
+          <div class="flex gap-9">
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/python.png" alt="" />
+              </div>
+              <p>Python</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/fastapi.png" alt="" />
+              </div>
+              <p>Fast Api</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/nodejs.png" alt="" />
+              </div>
+              <p>Node Js</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/php.png" alt="" class="w-[100px]" />
+              </div>
+              <p>Php</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img
+                  src="assets/technology/laravel.png"
+                  alt=""
+                  class="w-[75px]"
+                />
+              </div>
+              <p>Laravel</p>
+            </div>
+          </div>
+        </div>
+        <div id="frontend" class="content gap-9">
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/javascript.png" alt="" />
+            </div>
+            <p>Javascript</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/react.png" alt="" />
+            </div>
+            <p>React</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/nextjs.png" class="" />
+            </div>
+            <p>Next Js</p>
+          </div>
+        </div>
+        <div id="mobile" class="content gap-9">
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/flutter.png" class="" />
+            </div>
+            <p>Flutter</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/android.png" class="" />
+            </div>
+            <p>Android</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/ios.png" class="" />
+            </div>
+            <p>IOS</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/dart.png" class="" />
+            </div>
+            <p>Dart</p>
+          </div>
+        </div>
+        <div id="database" class="content gap-9">
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/mysql.png" class="" />
+            </div>
+            <p>MySql</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/firebase.png" class="" />
+            </div>
+            <p>Firebase</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/postgres.png" class="" />
+            </div>
+            <p>Postgres</p>
+          </div>
+          <div class="technology">
+            <div class="h-full flex items-center">
+              <img src="assets/technology/sqlite.png" class="" />
+            </div>
+            <p>SqLite</p>
+          </div>
+        </div>
+        <div id="tools" class="content gap-9">
+          <div class="grid grid-cols-4 gap-9">
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/figma.png" class="" />
+              </div>
+              <p>Figma</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/stripe.png" class="" />
+              </div>
+              <p>Stripe</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/razorpay.png" class="" />
+              </div>
+              <p>Razor Pay</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/paypal.png" class="" />
+              </div>
+              <p>Paypal</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/photoshop.png" class="" />
+              </div>
+              <p>Photoshop</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/xd.png" class="" />
+              </div>
+              <p>Adobe XD</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/illu.png" class="" />
+              </div>
+              <p>Illustrator</p>
+            </div>
+            <div class="technology">
+              <div class="h-full flex items-center">
+                <img src="assets/technology/maps.png" class="" />
+              </div>
+              <p>Google Maps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team -->
+    <div class="bg-white pt-5 px-9" id="team">
+      <h1 class="text-3xl">Meet Our Team</h1>
+      <div class="flex justify-center gap-[125px] py-9">
+        <div>
+          <div class="circle">
+            <img
+              src="assets/team/team1.png"
+              alt="Overlay Image"
+              class="overlay-image w-[170px]"
+            />
+          </div>
+          <div class="flex flex-col gap-1 mt-4 items-center">
+            <p class="text-xl font-semibold tracking-wide">Amirtha Laxmi</p>
+            <p>Managing Director</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">
+            <img
+              src="assets/team/team2.png"
+              alt="Overlay Image"
+              class="overlay-image w-[170px]"
+            />
+          </div>
+          <div class="flex flex-col mt-4 items-center">
+            <p class="text-xl font-semibold tracking-wide">Ganesan</p>
+            <p>Finance advisor</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">
+            <img
+              src="assets/team/team3.png"
+              alt="Overlay Image"
+              class="overlay-image w-[170px]"
+            />
+          </div>
+          <div class="flex flex-col gap-1 mt-4 items-center">
+            <p class="text-xl font-semibold tracking-wide">Selva Ganesh</p>
+            <p>Director</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="gradient-background h-[47vh] flex justify-center items-center">
+      <div class="w-full">
+        <div class="flex gap-14 border-b pb-9 justify-center">
+          <div class="flex flex-col gap-2 justify-center">
+            <img src="assets/logo.png" class="rounded-lg w-[200px]" alt="" />
+            <h1 class="text-lg">Your digital transformation trialblazers</h1>
+          </div>
+          <ul class="flex flex-col gap-2">
+            <li class="text-xl font-bold">Useful Links</li>
+            <li>Home</li>
+            <li>Dedicated Resources</li>
+            <li>Our Team</li>
+            <li>About us</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+          </ul>
+          <ul class="flex flex-col gap-2">
+            <li class="text-xl font-bold">Services</li>
+            <li>Digital Transformation</li>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Software Development</li>
+            <li>E-learning Solutions</li>
+          </ul>
+          <div class="flex flex-col gap-5 items-start">
+            <div class="flex flex-col items-start">
+              <p class="text-lg">Get in touch</p>
+              <div class="flex gap-3 mt-2">
+                <a href="https://www.linkedin.com/company/krdxcs/" target="_blank">
+                  <img src="assets/linked-in.svg" alt="" />
+                </a>
+                <img src="assets/facebook.svg" alt="" />
+                <img src="assets/mail.png" alt="" class="w-[50px]" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 items-start">
+              <h1 class="text-lg">Subscribe for Newsletter</h1>
+              <form action="" class="flex gap-3">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-72 py-1 px-2 rounded-md"
+                />
+                <button
+                  class="px-2 py-1 border border-1 border-white rounded-md"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="tracking-wide mt-4">@ Copyright 2024</div>
+      </div>
+    </div>
+  </body>
+</html>

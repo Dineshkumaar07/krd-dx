@@ -1,0 +1,116 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.barlow {
+  font-family: "Barlow", sans-serif;
+}
+.background-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/modern-equipped-computer-lab.jpg") no-repeat center
+    center/cover;
+  filter: brightness(0.3) grayscale(30%);
+  z-index: -1;
+}
+.gradient-background {
+  background: linear-gradient(
+    to top right,
+    /* 45-degree angle for a slanting effect */ #000000,
+    /* Black */ #1a1a1a,
+    /* Very dark gray */ #333333,
+    /* Dark gray */ #4d4d4d /*Medium dark gray*/
+  );
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Technolgy Stack */
+.sub-navbar {
+  margin-top: 20px;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content.active {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;;
+  opacity: 1;
+}
+
+.sub-navbar a {
+  color: rgba(0,0,0,0.5);
+  transition: color 0.5s
+
+}
+
+.sub-navbar a.active {
+  color: black;
+
+}
+
+.technology{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+/* Meet Our Team */
+/* .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+    height: auto; 
+    max-width: none; 
+} */
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color:beige;
+    border: 2px solid rgba(0,0,0,0.2); 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+    height: auto;
+    max-width: none;
+    transition: transform 0.3s ease; 
+}
+
+.circle:hover .overlay-image {
+    transform: translate(-50%, -38%) scale(1.1); 
+}
