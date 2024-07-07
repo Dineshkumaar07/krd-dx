@@ -1,3 +1,24 @@
+const nav = document.querySelector(".navbar");
+fetch("/navbar.html")
+  .then((res) => res.text())
+  .then((data) => {
+    nav.innerHTML = data;
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, "text/html");
+    eval(doc.querySelector("script").textContent);
+  });
+
+const footer = document.querySelector(".footer");
+fetch("/footer.html")
+  .then((res) => res.text())
+  .then((data) => {
+    footer.innerHTML = data;
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, "text/html");
+    eval(doc.querySelector("script").textContent);
+  });
+
+
 lottie.loadAnimation({
   container: document.getElementById("lottie-animation"),
   renderer: "svg",

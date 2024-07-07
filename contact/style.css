@@ -1,0 +1,16 @@
+.barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    to top right,
+    /* 45-degree angle for a slanting effect */ #000000,
+    /* Black */ #1a1a1a,
+    /* Very dark gray */ #333333,
+    /* Dark gray */ #4d4d4d /*Medium dark gray*/
+  );
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

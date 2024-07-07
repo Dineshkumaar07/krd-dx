@@ -71,26 +71,6 @@
   width: 100px;
 }
 
-/* Meet Our Team */
-/* .circle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
-    border-style: solid;
-    border-color: black;
-    border-radius: 50%;
-    overflow: hidden; 
-}
-
-.overlay-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -38%);
-    height: auto; 
-    max-width: none; 
-} */
 .circle {
     position: relative;
     width: 200px;

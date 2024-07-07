@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Carousel</title>
+    <link rel="stylesheet" href="./portfolio/style.css" />
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts (Barlow) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="barlow">
+    <nav
+      class="text-white flex justify-between px-9 text-lg bg-black/80 sticky top-0 h-[10vh] z-10 navbar"
+    ></nav>
+    <h1 class="text-center font-bold text-3xl mt-9">Portfolio</h1>
+    <div class="w-full h-[80vh]">
+      <div class="portfolio">
+        <div class="portfolio-inner">
+          <div class="project-carousel" id="project1">
+            <div class="carousel-inner p-1">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/portfolio/japanjobssearch.png"
+                  alt="Project 1 Image"
+                  class="project-image rounded-md"
+                />
+                <img
+                  src="./assets/portfolio/japanjobssearchMobile1.png"
+                  alt="Project 1 Image Mobile"
+                  class="project-image-mobile rounded-md"
+                />
+              </div>
+              <div class="carousel-item flex flex-col justify-center gap-6">
+                <h1 class="text-xl font-semibold">Japan Jobs Search</h1>
+                <p class="sm:px-10 px-4">
+                  Japanjobsearch.com is a Job Portal which Achieve Significant
+                  Reduction in Man-Hours for Choosing candidates with Enhanced
+                  Security.It has 24/7 Autobot which helps Users to clear their
+                  doubts instantly.User Friendly dashboard where Users can
+                  view/edit their datas easily
+                </p>
+                <div
+                  class="flex items-center ml-9 gap-1 justify-center flex-col"
+                >
+                  <p class="font-bold">Features</p>
+                  <div class="technologies flex">
+                    <p class="tracking-wider">
+                      AI based Candidate scoring, Payment gateway, User
+                      dashboard, AutoBot facility
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center ml-9 gap-3 justify-center flex-col"
+                >
+                  <p class="font-bold">Technologies</p>
+                  <div class="technologies flex w-[300px]">
+                    <img src="./assets/technology/php.png" />
+                    <img src="./assets/technology/python.png" alt="" />
+                    <img src="./assets/technology/mysql.png" alt="" />
+                    <img src="./assets/technology/javascript.png" alt="" />
+                    <img src="./assets/technology/css.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevPage(1)">
+              &#10094;
+            </button>
+            <button class="carousel-control next" onclick="nextPage(1)">
+              &#10095;
+            </button>
+          </div>
+          <div class="project-carousel" id="project2">
+            <div class="carousel-inner">
+              <div class="carousel-item active overflow-hidden">
+                <img
+                  src="./assets/portfolio/tatsumi.png"
+                  alt="Project 2 Image"
+                  class="project-image rounded-md"
+                />
+                <img
+                  src="./assets/portfolio/tatsumiMobile1.png"
+                  alt="Project 2 Image Mobile"
+                  class="project-image-mobile rounded-md"
+                />
+              </div>
+              <div class="carousel-item flex flex-col justify-center gap-6">
+                <h1 class="text-xl font-semibold">Tatsumi</h1>
+                <p class="sm:px-6 px-4">
+                  tatsumig.com is a Service based website with Enhanced
+                  Security.User Can avail Visa Processing ,Technical
+                  Training,Language Training and all moral support for getting
+                  Jobs in Japan.It has 24/7 Customer support which helps Users
+                  to clear their doubts.User Friendly dashboard where Users can
+                  view/edit their datas easily
+                </p>
+                <div
+                  class="flex items-center ml-9 gap-1 justify-center flex-col"
+                >
+                  <p class="font-bold">Features</p>
+                  <div class="technologies flex">
+                    <p class="tracking-wider">
+                      Payment gateway, User dashboard
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center ml-9 gap-3 justify-center flex-col"
+                >
+                  <p class="font-bold">Technologies</p>
+                  <div class="technologies flex w-[300px]">
+                    <img src="./assets/technology/php.png" />
+                    <img src="./assets/technology/mysql.png" alt="" />
+                    <img src="./assets/technology/javascript.png" alt="" />
+                    <img src="./assets/technology/css.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevPage(2)">
+              &#10094;
+            </button>
+            <button class="carousel-control next" onclick="nextPage(2)">
+              &#10095;
+            </button>
+          </div>
+          <div class="project-carousel" id="project3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="project3-image.jpg"
+                  alt="Project 3 Image"
+                  class="project-image"
+                />
+                <img
+                  src="project3-image-mobile.jpg"
+                  alt="Project 3 Image Mobile"
+                  class="project-image-mobile"
+                />
+              </div>
+              <div
+                class="carousel-item flex flex-col justify-center gap-6 mt-2"
+              >
+                <h1 class="text-xl font-semibold">O'Notify</h1>
+                <p class="sm:px-10 px-4">
+                  Trade info is a Flutter based Mobile app. Which suggest its
+                  users about efficient trading through Frequent Push
+                  notifications with high Security.So that user can take better
+                  decisions.It has support team which helps Users to clear their
+                  doubts.User Friendly dashboard where Users can view/edit their
+                  datas and view Notifications easily
+                </p>
+                <div
+                  class="flex items-center ml-9 gap-1 justify-center flex-col"
+                >
+                  <p class="font-bold">Features</p>
+                  <div class="technologies flex">
+                    <p class="tracking-wider">
+                      Push Notifications, Payment gateway, User dashboard,
+                      Ad-Management
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center ml-9 gap-3 justify-center flex-col"
+                >
+                  <p class="font-bold">Technologies</p>
+                  <div class="technologies flex w-[300px]">
+                    <img src="./assets/technology/flutter.png" />
+                    <img src="./assets/technology/postgres.png" alt="" />
+                    <img src="./assets/technology/javascript.png" alt="" />
+                    <img src="./assets/technology/css.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevPage(3)">
+              &#10094;
+            </button>
+            <button class="carousel-control next" onclick="nextPage(3)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+        <div class="sub-navbar">
+          <button class="sub-nav-btn active" onclick="showProject(1)">
+            Japan Jobs Search
+          </button>
+          <button class="sub-nav-btn" onclick="showProject(2)">Tatsumi</button>
+          <button class="sub-nav-btn" onclick="showProject(3)">O'Notify</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div
+      class="gradient-background h-[47vh] flex justify-center items-center footer"
+    ></div>
+    <script src="./portfolio/script.js"></script>
+  </body>
+</html>
